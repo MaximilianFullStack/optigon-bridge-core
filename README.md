@@ -1,3 +1,3 @@
-# Optgon Protocol
+# Optigon Protocol
 
 This is a bridge between Polygon and Optigon. 
