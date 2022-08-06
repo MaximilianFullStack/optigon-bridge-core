@@ -1,3 +1,5 @@
 # Optigon Protocol
 
-This is a bridge between Polygon and Optigon. 
+This is a Ether bridge between Polygon and Optigon. 
+
+It allows users to stake WETH/ETH depending on the network. 
