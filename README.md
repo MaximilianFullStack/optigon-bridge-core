@@ -1,11 +1,5 @@
-# PolySync Protocol
+# Optigon Protocol
 
-This is a trustless bridge between Polygon and ZkSync. Structure:
+This is a Ether bridge between Polygon and Optigon. 
 
-    1. Liquidity Network: to upda
-    2. Payment Channel
-    3. Lock and Mint
-
-## Contracts:
-
-1. Channel; when a user uses a bridge fuction on it sends the info to the other contract offchain
+It allows users to stake WETH/ETH depending on the network. Then distirbutes the protocol's fees amount the stakers according to their share of the pool. 
