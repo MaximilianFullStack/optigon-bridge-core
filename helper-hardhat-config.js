@@ -4,7 +4,7 @@ const networkConfig = {
     },
     80001: {
         name: "mumbai",
-        wethAddress: "0xA6FA4fB5f76172d178d61B04b0ecd319C5d1C0aa",
+        wethAddress: "0x2bdd17D5Ad8E2715935E480987E7527047213E1A",
     },
     1337: {
         name: "hardhat",
