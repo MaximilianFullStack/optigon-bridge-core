@@ -6,3 +6,6 @@ The contracts allow users to bridge Ether between Polygon and Optimism. Also use
 
 To relay information between the networks, the owner of the contracts has to run the relay scripts. Although this method is centralized, it is much simpilar than a "nodes" apporach which would require the contracts to varify the validity of the information they recieve.
 
+Scripts:
+  yarn hardhat run --network mumbai ./relay/polygonRelay.js
+  yarn hardhat run --network ogoerli ./relay/optimismRelay.js
