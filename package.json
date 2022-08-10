@@ -1,8 +1,7 @@
 {
-    "name": "avalanche-polygon-bridge",
+    "name": "optimism-polygon-bridge",
     "version": "1.0.0",
-    "description": "Bridge between Polygon and Avalanche",
-    "main": "index.js",
+    "description": "Bridge between Polygon and Optimism",
     "author": "Maximilian Mathews",
     "license": "GPL-3.0",
     "devDependencies": {
