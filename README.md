@@ -1,5 +1,8 @@
 # Optigon Protocol
 
-This is a Ether bridge between Polygon and Optigon. 
+The contracts allow users to bridge Ether between Polygon and Optimism. Also users can stake WETH/ETH depending on the network. Then the contract distirbutes the protocol's fees  according to stakers share of the pool. Finaly there is a mechanism to refund users if the bridge cannot be completed.
 
-It allows users to stake WETH/ETH depending on the network. Then distirbutes the protocol's fees amount the stakers according to their share of the pool. 
+## Relay
+
+To relay information between the networks, the owner of the contracts has to run the relay scripts. Although this method is centralized, it is much simpilar than a "nodes" apporach which would require the contracts to varify the validity of the information they recieve.
+
