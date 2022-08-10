@@ -1,4 +1,5 @@
 const { ethers, getNamedAccounts } = require("hardhat")
+const abi = require("./abis.json")
 require("dotenv").config()
 
 const polyAddress = "0x4DaF6286C410cBDB30B597b3256E337625422870"
@@ -8,11 +9,7 @@ const optiRPC = process.env.OGOERLI_URL
 
 const polyRelay = async () => {
     const alchemy = new ethers.providers.JsonRpcProvider(optiRPC)
-    const optiBridge = new ethers.getContractAt(
-        optiAddress,
-        "OptimismBridgeV1",
-        alchemy
-    )
+    const optiBridge = new ethers.Contract(optiAddress, abi.Optimism, alchemy)
 
     optiBridge.on("bridgeInitiated", (userAddress, bridgedAmount, fee) => {
         console.log("Optimism to Polygon bridge intitated")
@@ -28,8 +25,8 @@ const polyRelay = async () => {
 const completeBridge = async (user, bridgedAmount, fee) => {
     deployer = (await getNamedAccounts()).deployer
     polyBridge = await ethers.getContractAt(
-        polyAddress,
         "PolygonBridgeV1",
+        polyAddress,
         deployer
     )
 
@@ -48,8 +45,8 @@ const completeBridge = async (user, bridgedAmount, fee) => {
 const revertBridge = async (user, bridgedAmount, fee) => {
     deployer = (await getNamedAccounts()).deployer
     polyBridge = await ethers.getContractAt(
-        polyAddress,
         "PolygonBridgeV1",
+        polyAddress,
         deployer
     )
 
