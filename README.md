@@ -1,6 +1,6 @@
 # Optigon Protocol
 
-The contracts allow users to bridge Ether between Polygon and Optimism. Also users can stake WETH/ETH depending on the network. Then the contract distirbutes the protocol's fees  according to stakers share of the pool. Finaly there is a mechanism to refund users if the bridge cannot be completed.
+These contracts allow users to bridge Ether between Polygon and Optimism. They also serve as liquidity pools in which users can stake WETH/ETH depending on the network.  The contracts then distirbute the protocol's fees according to stakers share of the pool. Fifty percent of the fees go to the owner of the contracts and the other fifty percent is distrubuted amoung the stakers. Lastly, there is a mechanism to refund users if the bridge cannot be completed due to insufficent liquidity. 
 
 ## Relay
 
